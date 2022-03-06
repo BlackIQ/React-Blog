@@ -1,10 +1,12 @@
 const Navbar = () => {
     return (
-        <nav className="navbar">
-            <h1>React blog</h1>
-            <div className="links">
-                <a href="/">Home</a>
-                <a href="/create">New blog</a>
+        <nav className="navbar bg-light navbar-light">
+            <div className="container-fluid">
+                <a className="navbar-brand text-danger">React blog</a>
+                <div className="d-flex align-items-center">
+                    <a className="text-reset me-3" href="/">Home</a>
+                    <a className="text-reset me-3" href="/create">Create</a>
+                </div>
             </div>
         </nav>
     );
