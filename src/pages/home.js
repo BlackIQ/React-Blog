@@ -16,7 +16,7 @@ const Home = () => {
             <br/>
             {isLoading && <p>Loading . . .</p>}
             {errors && <p className="text-danger">{errors}</p>}
-            {data && <BlogList blogs={data} title="All blogs"/>}
+            {data && <BlogList blogs={data} />}
         </div>
     );
 }
