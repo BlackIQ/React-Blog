@@ -3,12 +3,7 @@ import BlogList from "../components/bloglist";
 
 const Home = () => {
 
-    const [blogs, setBlogs] = useState([
-        {id: 1, title: 'Laravel', caption: 'What is Laravel?', author: 'Amir', likes: 20},
-        {id: 1, title: 'React', caption: 'What is React??', author: 'Amir', likes: 25},
-        {id: 2, title: 'Php', caption: 'What is Php?', author: 'Nilo', likes: 10},
-        {id: 3, title: 'Js', caption: 'What is Javascript?', author: 'Anon', likes: 15},
-    ]);
+    const [blogs, setBlogs] = useState(null);
 
     const handleDelete = (id) => {
         const newBlogs = blogs.filter(blog => blog.id !== id);
@@ -16,14 +11,20 @@ const Home = () => {
     }
 
     useEffect(() => {
-        console.log('Use Effect ran');
-    });
+        fetch('http://localhost:8000/blogs').then(res => {
+            return res.json();
+        }).then((data) => {
+            setBlogs(data);
+        });
+    }, []);
 
     return (
         <div className="home">
             <h1>Home page</h1>
             <br/>
-            <BlogList blogs={blogs} handleDelete={handleDelete} title="All blogs"/>
+            {
+                blogs ? <BlogList blogs={blogs} handleDelete={handleDelete} title="All blogs"/> : <p>Loading . . .</p>
+            }
         </div>
     );
 }
