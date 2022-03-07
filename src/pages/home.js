@@ -4,6 +4,7 @@ import BlogList from "../components/bloglist";
 const Home = () => {
 
     const [blogs, setBlogs] = useState(null);
+    const [isloading, setLoading] = useState(true);
 
     const handleDelete = (id) => {
         const newBlogs = blogs.filter(blog => blog.id !== id);
@@ -15,6 +16,7 @@ const Home = () => {
             return res.json();
         }).then((data) => {
             setBlogs(data);
+            setLoading(false);
         });
     }, []);
 
@@ -22,9 +24,8 @@ const Home = () => {
         <div className="home">
             <h1>Home page</h1>
             <br/>
-            {
-                blogs ? <BlogList blogs={blogs} handleDelete={handleDelete} title="All blogs"/> : <p>Loading . . .</p>
-            }
+            {isloading && <p>Loading . . .</p>}
+            {blogs && <BlogList blogs={blogs} handleDelete={handleDelete} title="All blogs"/>}
         </div>
     );
 }
