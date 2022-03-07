@@ -17,8 +17,6 @@ const Home = () => {
             .then(response => {
                 if (response.status === 200) {
                     return response.json();
-                } else if (response.status === 400) {
-                    throw Error('400 - Back request.');
                 } else if (response.status === 403) {
                     throw Error('403 - Forbidden.');
                 } else if (response.status === 404) {
