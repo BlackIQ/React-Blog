@@ -4,8 +4,6 @@ import {Link} from "react-router-dom";
 const BlogList = (props) => {
     return (
         <div>
-            <h2>{ props.title }</h2>
-            <hr />
             {
                 props.blogs.map(blog => (
                     <div>
