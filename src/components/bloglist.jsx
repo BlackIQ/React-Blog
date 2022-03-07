@@ -1,3 +1,5 @@
+import {FaHeart, FaTrash} from "react-icons/fa";
+
 const BlogList = (props) => {
     return (
         <div>
@@ -11,7 +13,13 @@ const BlogList = (props) => {
                         </h4>
                         <p>
                             <b>{blog.caption}</b> - {blog.author}
-                            <span className="text-danger float-end">{blog.likes} &hearts;</span>
+                            <span className="text-danger float-end">
+                                {blog.likes} <FaHeart />
+                                &nbsp;
+                                |
+                                &nbsp;
+                                <FaTrash onClick={() => props.handleDelete(blog.id)} />
+                            </span>
                         </p>
                     </div>
                 ))
