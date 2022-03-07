@@ -1,4 +1,5 @@
-import {FaHeart, FaTrash} from "react-icons/fa";
+import {FaHeart} from "react-icons/fa";
+import {Link} from "react-router-dom";
 
 const BlogList = (props) => {
     return (
@@ -17,6 +18,8 @@ const BlogList = (props) => {
                                 {blog.likes} <FaHeart />
                             </span>
                         </p>
+                        <p><Link to={'/blog/' + blog.id} className="text-reset">Read more</Link></p>
+                        <hr className="border border-danger" />
                     </div>
                 ))
             }
