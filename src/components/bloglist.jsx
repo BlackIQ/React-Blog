@@ -8,7 +8,7 @@ const BlogList = (props) => {
             {
                 props.blogs.map(blog => (
                     <div>
-                        <h4 key={blog.id} className="text-danger">
+                        <h4 className="text-danger">
                             {blog.title}
                         </h4>
                         <p>
