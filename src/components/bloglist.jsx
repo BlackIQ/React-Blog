@@ -15,10 +15,6 @@ const BlogList = (props) => {
                             <b>{blog.caption}</b> - {blog.author}
                             <span className="text-danger float-end">
                                 {blog.likes} <FaHeart />
-                                &nbsp;
-                                |
-                                &nbsp;
-                                <FaTrash onClick={() => props.handleDelete(blog.id)} />
                             </span>
                         </p>
                     </div>
