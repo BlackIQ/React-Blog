@@ -11,7 +11,7 @@ const BlogList = (props) => {
                             {blog.title}
                         </h4>
                         <p>
-                            <b>{blog.caption}</b> - {blog.author}
+                            <b>{blog.body}</b> - {blog.author}
                             <span className="text-danger float-end">
                                 {blog.likes} <FaHeart />
                             </span>
