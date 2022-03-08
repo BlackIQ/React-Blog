@@ -1,44 +1,18 @@
 {
   "blogs": [
     {
-      "id": 1,
-      "title": "Laravel",
-      "body": "What is Laravel?",
+      "title": "New blog",
+      "body": "I dike to add a new blog",
       "author": "Amir",
-      "likes": 20
+      "likes": 2,
+      "id": 1
     },
     {
-      "id": 2,
-      "title": "React",
-      "body": "What is React?",
-      "author": "Amir",
-      "likes": 25
-    },
-    {
-      "id": 3,
-      "title": "Php",
-      "body": "What is Php?",
+      "title": "New",
+      "body": "Test new",
       "author": "Nilo",
-      "likes": 10
-    },
-    {
-      "id": 4,
-      "title": "Js",
-      "body": "What is Javascript?",
-      "author": "Anon",
-      "likes": 15
-    },
-    {
-      "title": "React is fun",
-      "body": "Testing blog\n",
-      "author": "Amir",
-      "id": 5
-    },
-    {
-      "title": "React is fun",
-      "body": "Testing blog",
-      "author": "Amir",
-      "id": 6
+      "likes": 0,
+      "id": 2
     }
   ]
 }
