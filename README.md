@@ -40,6 +40,7 @@ You should see blog index.
 ### Preview
 
 ![Index](public/images/home.png)
+![Blog](public/images/blog.png)
 ![create](public/images/create.png)
 ![blog done](public/images/blog-done.png)
 ![404](public/images/not-found.png)
