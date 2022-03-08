@@ -1,18 +1,18 @@
 {
   "blogs": [
     {
-      "title": "New blog",
-      "body": "I dike to add a new blog",
-      "author": "Amir",
-      "likes": 2,
-      "id": 1
-    },
-    {
       "title": "New",
       "body": "Test new",
       "author": "Nilo",
       "likes": 0,
       "id": 2
+    },
+    {
+      "title": "Hi guys",
+      "body": "Welcome to React blog project.",
+      "author": "Amir",
+      "likes": 0,
+      "id": 3
     }
   ]
 }
