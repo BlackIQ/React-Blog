@@ -16,7 +16,9 @@ const Create = () => {
 
         setAdding(true);
 
-        const blog = {title, body, author};
+        const likes = 0;
+
+        const blog = {title, body, author, likes};
 
         fetch('http://localhost:8000/blogs/', {
             method: 'POST',
