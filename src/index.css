@@ -7,3 +7,7 @@ body {
 .container {
     padding-top: 2% !important;
 }
+
+.pointer {
+    cursor: pointer;
+}
