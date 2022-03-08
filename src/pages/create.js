@@ -1,4 +1,5 @@
 import {useState} from "react";
+import {useHistory} from "react-router-dom";
 
 const Create = () => {
     const [title, setTitle] = useState(null);
@@ -7,6 +8,8 @@ const Create = () => {
 
     const [submitted, setSubmitted] = useState(false);
     const [isAdding, setAdding] = useState(false);
+
+    const history = useHistory();
 
     const submit = (e) => {
         e.preventDefault();
@@ -22,6 +25,10 @@ const Create = () => {
         }).then(() => {
             setAdding(false);
             setSubmitted(true);
+
+            setTitle('');
+            setBody('');
+            setAuthor('Default');
         });
     }
 
