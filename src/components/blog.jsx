@@ -6,7 +6,7 @@ const SingleBlog = (props) => {
             <h2 className="text-danger">{blog.title}</h2>
             <p>Written by <b>{blog.author}</b></p>
             <hr />
-            <p>{blog.caption}</p>
+            <p>{blog.body}</p>
         </div>
     );
 }
