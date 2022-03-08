@@ -39,4 +39,7 @@ You should see blog index.
 
 ### Preview
 
-Yes preview video or images will be added soon.
+![Index](public/images/home.png)
+![create](public/images/create.png)
+![blog done](public/images/blog-done.png)
+![404](public/images/not-found.png)
